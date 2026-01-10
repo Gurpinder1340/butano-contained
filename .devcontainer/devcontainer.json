@@ -1,6 +1,7 @@
 {
     "name": "GBA Scenic Route Env",
     "image": "devkitpro/devkitarm:20251231",
+    // TODO: Move most of these customizations to Dev Container Features
     "customizations": {
         "vscode": {
         "extensions": [
