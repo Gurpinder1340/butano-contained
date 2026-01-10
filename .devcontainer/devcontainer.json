@@ -1,0 +1,43 @@
+{
+    "name": "GBA Scenic Route Env",
+    "image": "devkitpro/devkitarm:20251231",
+    "customizations": {
+        "vscode": {
+        "extensions": [
+            "ms-vscode.cpptools-extension-pack",
+            "ms-vscode.makefile-tools"
+        ],
+        "settings": {
+            "C_Cpp.intelliSenseEngine": "default",
+            "C_Cpp.default.compilerPath": "/opt/devkitpro/devkitARM/bin/arm-none-eabi-g++",
+            "C_Cpp.default.cppStandard": "c++23",
+            "C_Cpp.default.intelliSenseMode": "gcc-arm",
+            "C_Cpp.default.includePath": [
+            "${workspaceFolder}/butano/include",
+            "${workspaceFolder}/common/include",
+            "${workspaceFolder}/butano/hw/**/include",
+            "${workspaceFolder}/games/**/build",
+            "${workspaceFolder}/examples/**/include",
+            "${workspaceFolder}/examples/**/build"
+            ],
+            "C_Cpp.default.defines": [
+            "__GBA__",
+            "NDEBUG"
+            ],
+            "makefile.configureOnOpen": true,
+            "files.associations": {
+            "*.h": "cpp"
+            },
+            "editor.formatOnSave": true,
+            "editor.rulers": [100],
+            "terminal.integrated.defaultProfile.linux": "bash",
+            "terminal.integrated.enablePersistentSessions": true,
+            "terminal.integrated.persistentSessionReviveProcess": "onExit",
+            "window.restoreWindows": "all",
+            "workbench.editorAssociations": {
+            "*.md": "vscode.markdown.preview.editor"
+            }
+        }
+        }
+    }
+}
