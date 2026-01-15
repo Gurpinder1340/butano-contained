@@ -912,7 +912,7 @@ int main()
     bn::core::init();
 
     bn::sprite_text_generator text_generator(common::variable_8x16_sprite_font);
-    bn::bg_palettes::set_transparent_color(bn::color(16, 16, 16));
+    bn::bg_palettes::set_transparent_color(bn::color(31, 31, 0));
 
     while(true)
     {
